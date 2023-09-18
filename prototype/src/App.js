@@ -1,9 +1,13 @@
 import './App.css';
+import  Header from './Components/Header.jsx';
+import TopSection  from './Components/Top_Section.jsx';
+
 
 function App() {
   return (
     <div className="App">
-      <p>This is a prototype</p>
+      <Header />
+      <TopSection />
     </div>
   );
 }

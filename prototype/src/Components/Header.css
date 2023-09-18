@@ -1,0 +1,28 @@
+/* Header.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .left-buttons button {
+    margin-right: 10px;
+    background-color:#333;
+    font-weight: bold;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: auto;
+    border-radius: 50% 10%  10% 50%;
+  }
+  
