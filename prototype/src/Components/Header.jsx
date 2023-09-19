@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import {BsDroplet} from 'react-icons/bs'
 import image from'../images/Top.jpg'
 
 const Header = () => {
@@ -10,6 +11,7 @@ const Header = () => {
       </div>
       <div className="left-buttons">
         <button>Login</button>
+        <BsDroplet/>
         <button>Sign-up</button>
         <button>Dashboard</button>
       </div>
