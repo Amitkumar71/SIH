@@ -1,5 +1,3 @@
-/* Header.css */
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -26,3 +24,14 @@
     border-radius: 50% 10%  10% 50%;
   }
   
+  @media (max-width: 500px) {
+    .header {
+      flex-direction: column;
+    }
+    .left-buttons {
+      margin-bottom: 10px;
+    }
+    .logo {
+      display: none;
+    }
+  }

@@ -35,3 +35,15 @@
      cursor: pointer;
      border: 1px solid black;
   }
+
+  @media (max-width: 500px) {
+    .top {
+      height: 300px;
+    }
+    .top p {
+      font-size: 20px;
+    }
+    .top button {
+      font-size: 10px;
+    }
+  }

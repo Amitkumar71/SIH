@@ -7,14 +7,15 @@
   }
   
   .service-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #000;
-    padding: 20px;
+    background-color: rgb(60, 60, 78);
+    padding: 10px;
     margin: 10px 0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 59px;
+    border-top: 6px solid blue;
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 0px;
   }
   
   .service-item i {
@@ -23,10 +24,12 @@
     color: #00ffcc;
   }
   
-
   .main {
-    background-color: black;
+    background-color: rgb(60, 60, 78);
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   .services-container{
@@ -34,4 +37,11 @@
     flex-direction: row;
     justify-content: space-evenly;
     gap:10px;
+  }
+
+  .Heading{
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-left: 20%;
   }

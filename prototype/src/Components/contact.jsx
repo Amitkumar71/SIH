@@ -6,7 +6,7 @@ class Contact extends Component {
     return (
 <div className="contact-container">
   <div className="contact-info">
-    <h1>Contact Us</h1>
+    <h1><span style={{ color: 'cornflowerblue', fontSize: '70px' }}>__</span><br/>GET IN<br/>TOUCH</h1>
     <p>Fill out the form below, and we will get back to you shortly.</p>
   </div>
   <div className="contact-form">
