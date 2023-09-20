@@ -41,3 +41,29 @@
   }
 
   
+@media (max-width: 768px) {
+  .self-assessment-container {
+    min-height: auto; 
+  }
+
+  .content {
+    width: 90%;
+  }
+
+  .heading {
+    font-size: 24px;
+    margin-bottom: 10px; 
+  }
+
+  .quote {
+    font-size: 14px;
+    width: 90%; 
+  }
+
+  .button {
+    margin-top: 15px; 
+    font-size: 14px; 
+    width: 160px; 
+    height: 40px; 
+  }
+}

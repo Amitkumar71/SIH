@@ -1,7 +1,7 @@
 .top {
     border: 1px solid black;
     height: 700px;
-    background-image: url('../images/top.png'), url('../images/left.jpg'); /* URLs for your images */
+    background-image: url('../images/top.png'), url('../images/left.jpg');
     background-repeat: no-repeat, no-repeat;
     background-size: 49% 100%, 51% 100%;
     background-position: right, left;
@@ -29,31 +29,22 @@
  .top-content p{
   font-size: 18px;
  }
-  /* .top button {
-    color: black;
-    background-color: lightgrey;
-    border-radius: 30px;
-    font-size: 15px;
-    border: none;
-    height: 6%;
-    font-weight: 800;
+ @media (max-width: 500px) {
+  .top {
+    height: auto;
+    background-size: 100%, 100%;
   }
- 
-  .top button:hover {
-     background-color: rgb(255, 255, 255);
-     color: black;
-     cursor: pointer;
-     border: 1px solid black;
-  } */
 
-  @media (max-width: 500px) {
-    .top {
-      height: 300px;
-    }
-    .top p {
-      font-size: 20px;
-    }
-    .top button {
-      font-size: 10px;
-    }
+  .top-content {
+    width: 90%;
+    margin-right: 0;
   }
+
+  .top-content p {
+    font-size: 16px;
+  }
+
+  .top button {
+    font-size: 12px;
+  }
+}

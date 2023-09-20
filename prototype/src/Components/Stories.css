@@ -47,3 +47,28 @@
 .bg-color1{
     background-color: pink;
 }
+
+
+@media (max-width: 768px) {
+    .success-content {
+      min-height: auto;
+    }
+  
+    .story {
+      width: 90%;
+      margin-top: 20px;
+    }
+  
+    .story-heading {
+      font-size: 24px;
+    }
+  
+    .story img {
+      max-width: 300px;
+      height: auto;
+    }
+  
+    .story p {
+      font-size: 14px;
+    }
+  }
