@@ -4,11 +4,13 @@ import './TopSection.css'
 const TopSection = () => {
   return (
     <div className="top">
+      <div className='top-content'>
+        <h2>ABOUT US</h2>
       <p>
-      A user-friendly platform for stress assessment, personalized recommendations, and medical support, helping individuals manage stress effectively for improved mental well-being.      </p>
-      <button id="scrollButton">
-        Monitor your stress
-      </button>
+        A user-friendly mental health screening platform for improved mental well-being.
+      </p>
+      {/* <button className="button">Attempt Questionare</button> */}
+      </div>
     </div>
   );
 };

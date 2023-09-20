@@ -10,7 +10,7 @@ const ServicesComponent = () => {
     <div className="services-container">
       <div className="service-item">
         <i className="fas fa-clock"></i>
-        <p>24/7<br/>Support</p>
+        <p>SELF<br/>ASSESMENT</p>
       </div>
       <div className="service-item">
         <i className="fas fa-map-marker-alt"></i>
@@ -18,7 +18,7 @@ const ServicesComponent = () => {
       </div>
       <div className="service-item">
         <i className="fas fa-heartbeat"></i>
-        <p>Monitor<br/>Stress</p>
+        <p>Monitor<br/></p>
       </div>
     </div>
     </div>
