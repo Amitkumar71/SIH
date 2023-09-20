@@ -31,13 +31,16 @@
  }
  @media (max-width: 500px) {
   .top {
-    height: auto;
+    height: 450px;
     background-size: 100%, 100%;
+    border: none;
   }
 
   .top-content {
-    width: 90%;
+    width: 96%;
+    margin-top: 55%;
     margin-right: 0;
+    padding: 8px;
   }
 
   .top-content p {

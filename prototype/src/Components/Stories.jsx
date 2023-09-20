@@ -11,15 +11,15 @@ const SuccessStories = () => {
         <div className="image-container">
           <div className="story">
             <img src={image1} alt="Success Story 1" />
-            <p>Moderate Stress</p>
+            <p>Story-1</p>
           </div>
           <div className="story">
             <img src={image1} alt="Success Story 2" />
-            <p>Moderate stress</p>
+            <p>Story-2</p>
           </div>
           <div className="story">
             <img src={image3} alt="Success Story 3" />
-            <p>High Stress</p>
+            <p>Story-3</p>
           </div>
         </div>
         <button className="button">Read More</button>

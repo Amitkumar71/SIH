@@ -1,47 +1,55 @@
-/* ServicesComponent.css */
+.services-container {
+  text-align: center;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.service-item {
+  background-color: rgb(60, 60, 78);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 0px 59px;
+  border-top: 6px solid blue;
+  text-align: left;
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 0px;
+}
+
+.service-item i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #00ffcc;
+}
+
+.main {
+  background-color: rgb(60, 60, 78);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 
 .services-container {
-    text-align: center;
-    color: #fff;
-    font-family: Arial, sans-serif;
-  }
-  
-  .service-item {
-    background-color: rgb(60, 60, 78);
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 0px 59px;
-    border-top: 6px solid blue;
-    text-align: left;
-    font-weight: bold;
-    font-size: 18px;
-    padding-top: 0px;
-  }
-  
-  .service-item i {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.Heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 20px auto;
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  .Heading {
     font-size: 24px;
-    margin-right: 10px;
-    color: #00ffcc;
-  }
-  
-  .main {
-    background-color: rgb(60, 60, 78);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
   }
 
-  .services-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    gap:10px;
+  .service-item {
+    font-size: 16px;
   }
-
-  .Heading{
-    font-size: 50px;
-    font-weight: bold;
-    margin-left: 20px;
-    margin-left: 20%;
-  }
+}

@@ -1,13 +1,13 @@
 import React from 'react';
 import './Header.css';
 // import {BsDroplet,Prof} from 'react-icons/bs'
-// import image from'../images/Top.jpg'
+import image from'../images/logo.png'
 
 const Header = () => {
   return (
     <div className="header">
       <div className="logo">
-        <img src="" alt="" />
+        <img src={image} alt="" />
       </div>
       <div className="left-buttons">
         <button>Login</button>

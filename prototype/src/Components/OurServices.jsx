@@ -18,8 +18,13 @@ const ServicesComponent = () => {
       </div>
       <div className="service-item">
         <i className="fas fa-heartbeat"></i>
-        <p>Monitor<br/></p>
+        <p>Fun<br/>Activities</p>
       </div>
+      <div className="service-item">
+        <i className="fas fa-heartbeat"></i>
+        <p>Healthy<br/>Lifestyle</p>
+      </div>
+
     </div>
     </div>
   );
