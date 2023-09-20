@@ -10,6 +10,7 @@ import Questionnaire from './Components/Questionnare.jsx';
 import ServicesComponent from './Components/OurServices.jsx';
 import SuccessStories from './Components/Stories.jsx';
 import Footer from './Components/Footer';
+import Charts from './Components/Charts.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
                 <SelfAssessment />
                 <ServicesComponent />
                 <SuccessStories />
+                <Charts />
                 <Contact />
               </>
             }
