@@ -1,0 +1,49 @@
+.success-stories{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, white 50%, #F9ECFF 50%);
+    height: 550px;
+}
+
+.stories-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.story{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 60%;
+    text-align: center;
+}
+
+.story-heading{
+    font-size: 32px;
+    font-family: 'Montserrat';
+
+}
+.image-container{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.story img{
+    width: 85%;
+    height: 250px;
+}
+.story p{
+    font-size: 18px;
+    width: 68%;
+    font-weight: 450;
+}
+
+.bg-color1{
+    background-color: pink;
+}
