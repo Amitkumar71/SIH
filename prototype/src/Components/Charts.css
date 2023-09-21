@@ -17,12 +17,13 @@
 }
 
 .pie-chart{
-    width: 40%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     border-radius: 22px;
     justify-content: center;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
 }
 
 .pie-chart h1{

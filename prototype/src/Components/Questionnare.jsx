@@ -1,76 +1,109 @@
 import React, { useState } from 'react';
-import './Questionnaire.css'; 
+import './Questionnaire.css';
 
-const Questionnaire = () => {
-  const [formData, setFormData] = useState({});
+function YourComponent() {
+  const questions = [
+    {
+      id: 'question1',
+      text: '1-How often do you feel overwhelmed or stressed?',
+      options: ['Rarely', 'Occasionally', 'Frequently', 'Constantly'],
+    },
+    {
+      id: 'question2',
+      text: '2-During the past 4 weeks, have you had any problems with your work or daily life due to your physical health?',
+      options: ['Yes', 'No', 'Not Sure'],
+    },
+    {
+      id: 'question3',
+      text: "3-Are you able to get a good night's sleep most nights?",
+      options: ['Yes, regularly', 'Sometimes', 'Never'],
+    },
+    {
+      id: 'question4',
+      text: '4-Have you seen a therapist in the recent past?',
+      options: ['Yes', 'No'],
+    },
+    {
+      id: 'question5',
+      text: '5-Do you find it difficult to concentrate or make decisions?',
+      options: ['Not at all', 'Occasionally', 'All the time'],
+    },
+    {
+      id: 'question6',
+      text: '6-Do you have any thoughts of self-harm or suicide?',
+      options: ['No, not at all', 'Rarely, and they pass quickly', 'Sometimes, but I would never act on them', 'Yes, I often think about it or have a plan'],
+    },
+    {
+      id: 'question7',
+      text: '7-When was the last time you felt good about yourself?',
+      options: ['Few days ago', 'Few weeks ago', 'Few months ago', 'Few years ago', "I don't remember"],
+    },
+    {
+      id: 'question8',
+      text: '8-Have you noticed any change in your diet habits?',
+      options: ['Yes, I eat too much', 'Yes, I don\'t feel hungry', 'Not much', 'No change'],
+    },
+    {
+      id: 'question9',
+      text: '9-Have you been diagnosed with any form of depression in the past?',
+      options: ['Yes', 'No'],
+    },
+    {
+      id: 'question10',
+      text: '10-Are you satisfied with your current social and personal life?',
+      options: ['Very satisfied', 'Somewhat satisfied', 'Not very satisfied', 'Not satisfied at all'],
+    },
+  ];
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
+  const [selectedOptions, setSelectedOptions] = useState(
+    questions.reduce((acc, question) => {
+      acc[question.id] = '';
+      return acc;
+    }, {})
+  );
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setSelectedOptions({
+      ...selectedOptions,
       [name]: value,
     });
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(selectedOptions);
+  };
+
   return (
-    <div className="questionnaire-container">
-      <h2>Mental Health Questionnaire</h2>
-      <form>
-        <div className="question">
-          <label>1. How are you feeling today?</label>
-          <input type="text" name="question1" onChange={handleInputChange} />
-        </div>
-        <div className="question">
-          <label>2. On a scale of 1 to 10, how stressed are you?</label>
-          <input type="range" name="question2" min="1" max="10" onChange={handleInputChange} />
-        </div>
-        <div className="question">
-          <label>3. Are you getting enough sleep?</label>
-          <select name="question3" onChange={handleInputChange}>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-          </select>
-        </div>
-        <div className="question">
-          <label>4. Do you engage in regular physical activity?</label>
-          <select name="question4" onChange={handleInputChange}>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-          </select>
-        </div>
-        <div className="question">
-          <label>5. How would you rate your overall mood today?</label>
-          <input type="number" name="question5" min="1" max="10" onChange={handleInputChange} />
-        </div>
-        <div className="question">
-          <label>6. Are you experiencing any work-related stress?</label>
-          <input type="checkbox" name="question6" onChange={handleInputChange} />
-        </div>
-        <div className="question">
-          <label>7. How do you cope with stress?</label>
-          <textarea name="question7" onChange={handleInputChange}></textarea>
-        </div>
-        <div className="question">
-          <label>8. Are you satisfied with your social life?</label>
-          <select name="question8" onChange={handleInputChange}>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-          </select>
-        </div>
-        <div className="question">
-          <label>9. Are you experiencing any physical symptoms of stress (e.g., headaches, fatigue)?</label>
-          <input type="checkbox" name="question9" onChange={handleInputChange} />
-        </div>
-        <div className="question">
-          <label>10. Have you sought professional help for managing stress?</label>
-          <select name="question10" onChange={handleInputChange}>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-          </select>
-        </div>
-      </form>
+    <div className='questionnair-main'>
+      <h2>Please take a few minutes to fill out this survey on the overall status of your mental health. We value your feedback and your responses will be kept confidential.</h2>
+      <div className="questions-container">
+        <form onSubmit={handleSubmit}>
+          {questions.map((question) => (
+            <div className="question" key={question.id}>
+              <label className="question-label">{question.text}</label>
+              {question.options.map((option) => (
+                <div className="option" key={option}>
+                  <input
+                    type="radio"
+                    name={question.id}
+                    value={option}
+                    onChange={handleInputChange}
+                    checked={selectedOptions[question.id] === option}
+                  />
+                  <label htmlFor={option}>{option}</label>
+                </div>
+              ))}
+            </div>
+          ))}
+          <div className="submit-button">
+            <button type="submit">SUBMIT</button>
+          </div>
+        </form>
+      </div>
     </div>
   );
-};
+}
 
-export default Questionnaire;
+export default YourComponent;
