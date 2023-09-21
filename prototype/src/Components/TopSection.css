@@ -1,7 +1,7 @@
 .top {
     border: 1px solid black;
     height: 700px;
-    background-image: url('../images/top1.png'), url('../images/left1.jpg');
+    background-image: url('../images/top1.png'), url('../images/left2.jpg');
     background-repeat: no-repeat, no-repeat;
     background-size: 49% 100%, 51% 100%;
     background-position: right, left;
@@ -17,7 +17,7 @@
     padding: 28px;
     width: 28%;
     margin-right:29.7%;
-    margin-top: 10%;
+    margin-top: 20%;
     text-align: left;
     background-color: white;
     /* filter: drop-shadow(2px 4px 6px white); */
