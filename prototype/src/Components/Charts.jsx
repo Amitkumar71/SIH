@@ -11,19 +11,31 @@ const PieChart = () => {
   { x: "Age-(35-45)", y: 400},
   ];
 
+  const myData1=[
+    { x: "Health workers", y: 200 },
+    { x: "public", y: 500 },
+    ];
+
 
   return (
     <div className='chart'>
     <div className='content'>
-      <h2>Visual Data About the Users</h2>
-      <p>Category Wise Data About our Users<br/>That Which Age Group has more Stress</p>
+      <h2>User Data Visualization</h2>
+      <p>Collective Insights about our users with our interactive charts and graphs, illuminating the user's journey on our site</p>
       </div>
+      <div className='charts'>
       <div className='pie-chart'>
-        <h1>Pie Chart</h1>
+        <h1>According to Age</h1>
       <VictoryPie data={myData}
       colorScale={["blue","pink","green"]}
-      radius={100}
-      />
+      radius={100}/>
+      </div>
+      <div className='pie-chart'>
+        <h1>Type of User</h1>
+      <VictoryPie data={myData1}
+      colorScale={["blue","pink","green"]}
+      radius={100}/>
+      </div>
       </div>
     </div>
   );

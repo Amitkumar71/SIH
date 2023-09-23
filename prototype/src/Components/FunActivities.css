@@ -1,0 +1,81 @@
+.submit-button{
+  font-size: 26px;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 12px;
+  margin-top: 10px;
+  color: white;
+  position:sticky;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: 160px;
+
+}
+.menu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .menu .menuTitle {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: rgb(9, 122, 9);
+  }
+  
+  .menuList , .menuList1{
+    width: 80vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    background-color: white;
+  }
+  
+  p{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    font-size: 21.4px;
+  }
+  .menuItem , .menuItem1{
+    border-radius: 15px;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  }
+  .menuItem:hover,.menuItem1:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+  
+  .menuItem div , .menuItem1 div {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .menuItem h1,.menuItem p,.menuItem1 h1,
+  .menuItem1 p {
+    margin-left: 10px;
+  }
+  
+  @media only screen and (max-width: 1300px) {
+    .menuList {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .menuList {
+      grid-template-columns: 1fr;
+    }
+  }
+  

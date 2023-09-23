@@ -1,5 +1,6 @@
 import React from 'react';
 import './OurServices.css';
+import { Link } from 'react-router-dom';
 
 const ServicesComponent = () => {
   return (
@@ -10,19 +11,19 @@ const ServicesComponent = () => {
     <div className="services-container">
       <div className="service-item">
         <i className="fas fa-clock"></i>
-        <p>SELF<br/>ASSESMENT</p>
+        <Link><p>SELF<br/>ASSESMENT</p></Link>
       </div>
       <div className="service-item">
         <i className="fas fa-map-marker-alt"></i>
-        <p>Nearby<br/>Help</p>
+        <Link><p>Nearby<br/>Help</p></Link>
       </div>
       <div className="service-item">
         <i className="fas fa-heartbeat"></i>
-        <p>Fun<br/>Activities</p>
+        <Link to="/activities"><p>Fun<br/>Activities</p></Link>
       </div>
       <div className="service-item">
         <i className="fas fa-heartbeat"></i>
-        <p>Healthy<br/>Lifestyle</p>
+        <Link><p>Healthy<br/>Lifestyle</p></Link>
       </div>
 
     </div>

@@ -5,8 +5,8 @@ import {BsInstagram,BsLinkedin,BsGithub} from 'react-icons/bs'
 const Footer = () => {
   return (
     <footer className="footer">
-        <div className="name">Mental Fit</div>
-        <div className="rights">&copy; 2023 Mental Fit<br/>All Rights Reserved</div>
+        <div className="name">Health Fit</div>
+        <div className="rights">&copy; 2023 Health Fit<br/>All Rights Reserved</div>
       <div className="socials">
           <a href="https://www.linkedin.com/" className="social-link"><BsLinkedin/></a>
           <a href="https://github.com/" className="social-link"><BsGithub/></a>

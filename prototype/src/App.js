@@ -12,6 +12,7 @@ import SuccessStories from './Components/Stories.jsx';
 import Footer from './Components/Footer';
 import Charts from './Components/Charts.jsx';
 import Dashboard2 from './Components/Dashboard2';
+import Activities from './Components/FunActivities.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
           />
           <Route path="/dashboard" element={<Dashboard2 />} />
           <Route path="/questionnaire" element={<Questionnaire />} />
+          <Route path="/activities" element={<Activities />} />
         </Routes>
         <Footer />
       </div>

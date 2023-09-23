@@ -4,6 +4,14 @@
     justify-content: center;
     align-items: flex-start;
 }
+.charts{
+    display: flex;
+    flex-direction: row;
+    gap: 77px;
+    width: 100%;
+    margin-bottom: 5%;
+    justify-content: center;
+}
 .chart h2{
     font-size: 32px;
     font-family: 'Montserrat';
@@ -36,4 +44,33 @@
     background-color: gray;
     align-items: center;
 
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 768px) {
+    .charts {
+        flex-direction: row;
+        gap: 20px;
+        width: 96%;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3%;
+    }
+
+    .pie-chart {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    
+    .chart p {
+        width: 100%;
+    }
+    
+    .pie-chart h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
 }

@@ -10,7 +10,7 @@
 
   .content{
     display: flex;
-    width: 60%;
+    width: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -47,7 +47,7 @@
   }
 
   .content {
-    width: 90%;
+    width: 100%;
   }
 
   .heading {
