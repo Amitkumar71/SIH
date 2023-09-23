@@ -1,0 +1,123 @@
+.dashboard-container {
+    display: flex;
+    justify-content: space-between;
+    height: 700px;
+  }
+  
+  .left-section {
+    width: 20%;
+    padding: 20px;
+  }
+  
+  .profile-image img {
+    width: 100%;
+  }
+  
+  .details {
+    margin-top: 20px;
+  }
+  
+  .detail-item {
+    margin-bottom: 10px;
+  }
+  
+  .right-section {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .right-heading{
+    margin-left: 20px;
+  }
+  .assessment-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20px;
+    color: black;
+    gap: 20px;
+  }
+  .assessment-card{
+    width: 30%;
+    height: 200px;
+    background-color: rgb(249, 236, 255);
+    padding: 20px;
+    box-shadow: 10px 10px 5px rgb(223, 180, 243);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .add-interests {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .profile-image{
+    width: 220px;
+    height: 220px;
+    border-radius: 5%;
+    overflow: hidden;
+    border: 8px solid rgb(246, 240, 240);
+  }
+  
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s;
+    transform: scale(1.2);
+  }
+  
+.indicator {
+    width: 20px;
+    height: 100px;
+    background-color: #ccc;
+    border: black 2px solid;
+}
+
+.high {
+    background: linear-gradient(to right, red 60%, transparent 100%);
+    width: 90%;
+}
+
+.medium {
+    background: linear-gradient(to right, #FFD700 40%, transparent 62%);
+    width: 90%;
+}
+
+.low {
+    background: linear-gradient(to right, #00FF7F 20%, transparent 40%);
+    width: 90%;
+}
+
+@media (max-width: 768px) {
+    .dashboard-container {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+  
+    .left-section {
+      width: 200px; 
+      margin-bottom: 20px; 
+    }
+  
+    .right-section {
+      width: 100%;
+      padding: 0%;
+    }
+  
+    .assessment-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .assessment-card {
+      width: 90%;
+    }
+    .add-interests{
+        display: none;
+    }
+  }
