@@ -1,6 +1,6 @@
 import React from 'react';
 import './Stories.css';
-import image1 from '../images/story2.jpg';
+import image1 from '../images/story1.jpg';
 import image2 from '../images/story2.jpg';
 import image3 from '../images/story3.jpg';
 
