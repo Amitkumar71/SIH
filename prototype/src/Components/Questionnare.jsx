@@ -75,6 +75,12 @@ function YourComponent() {
     console.log(selectedOptions);
   };
 
+  const handleSubmit_btn = (event) => {
+    event.preventDefault();
+    console.log(selectedOptions);
+    alert("Thank you for taking the time to fill out this survey. Your responses will be kept confidential.");
+  }
+
   return (
     <div className='questionnair-main'>
       <h2>Please take a few minutes to fill out this survey on the overall status of your mental health. We value your feedback and your responses will be kept confidential.</h2>
@@ -98,7 +104,7 @@ function YourComponent() {
             </div>
           ))}
           <div className="submit-button">
-            <button type="submit">SUBMIT</button>
+            <button type="submit" on onClick={handleSubmit_btn}>SUBMIT</button>
           </div>
         </form>
       </div>

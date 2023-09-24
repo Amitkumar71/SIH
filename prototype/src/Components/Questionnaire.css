@@ -50,9 +50,8 @@ label {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Style for the selected option */
 input[type="radio"]:checked + label {
-  color: rgb(80, 199, 12); /* Change color to a desired highlight color */
+  color: rgb(80, 199, 12);
   font-weight: bold;
 }
 
@@ -66,4 +65,5 @@ input[type="radio"]:checked + label {
   padding: 10px;
   border: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
 }
