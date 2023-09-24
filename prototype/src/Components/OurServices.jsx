@@ -11,19 +11,19 @@ const ServicesComponent = () => {
     <div className="services-container">
       <div className="service-item">
         <i className="fas fa-clock"></i>
-        <Link><p>SELF<br/>ASSESMENT</p></Link>
+        <Link style={{textDecoration: 'none'}} to="/"><p>SELF<br/>ASSESMENT</p></Link>
       </div>
       <div className="service-item">
         <i className="fas fa-map-marker-alt"></i>
-        <Link><p>Nearby<br/>Help</p></Link>
+        <Link style={{textDecoration: 'none'}} to="/"><p>Nearby<br/>Help</p></Link>
       </div>
       <div className="service-item">
         <i className="fas fa-heartbeat"></i>
-        <Link to="/activities"><p>Fun<br/>Activities</p></Link>
+        <Link style={{textDecoration: 'none'}} to="/activities" ><p>Fun<br/>Activities</p></Link>
       </div>
       <div className="service-item">
         <i className="fas fa-heartbeat"></i>
-        <Link><p>Healthy<br/>Lifestyle</p></Link>
+        <Link style={{textDecoration: 'none'}} to="/"><p>Healthy<br/>Lifestyle</p></Link>
       </div>
 
     </div>

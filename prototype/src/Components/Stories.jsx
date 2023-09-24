@@ -14,13 +14,13 @@ const SuccessStories = () => {
     },
     {
       id: 2,
-      image: image2,
+      image: image3,
       review: "'The articles, tips, and community support have been invaluable in helping me navigate stress and find a sense of calm. I've never felt more in control of my mental health. I'm so grateful for this resource!'",
       rating: 5,
     },
     {
       id: 3,
-      image: image3,
+      image: image2,
       review: "'The guided meditation sessions have become a part of my daily routine, and I can't express how much they've improved my overall well-being. It's like having a personal stress coach in my pocket. Thank you!'",
       rating: 3, 
     },
