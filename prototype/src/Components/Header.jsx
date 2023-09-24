@@ -13,7 +13,7 @@ const Header = () => {
       <div className="left-buttons">
         <Link to="/"><button>Home</button></Link>
         <Link to="/dashboard"><button>Dashboard</button></Link>
-        <button>Login/Sign-up</button>
+        <button>Login</button>
       </div>
     </div>
   );
