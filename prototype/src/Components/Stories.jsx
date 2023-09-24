@@ -1,20 +1,20 @@
 import React from 'react';
 import './Stories.css';
-import image1 from '../images/story2.jpg';
-import image2 from '../images/story3.jpg';
-import image3 from '../images/story2.jpg';
+// import image1 from '../images/story3.jpg';
+import image2 from '../images/story2.jpg';
+import image3 from '../images/story3.jpg';
 
 const SuccessStories = () => {
   const stories = [
     {
       id: 1,
-      image: image1,
+      image: image3,
       review: "'The resources and techniques provided here have truly been a game-changer for me. I've learned how to relax, breathe, and regain my peace of mind. Highly recommended'",
       rating: 4,
     },
     {
       id: 2,
-      image: image3,
+      image: image2,
       review: "'The articles, tips, and community support have been invaluable in helping me navigate stress and find a sense of calm. I've never felt more in control of my mental health. I'm so grateful for this resource!'",
       rating: 5,
     },

@@ -6,24 +6,24 @@ const ServicesComponent = () => {
   return (
     <div className='main'>
       <div className='Heading'>
-        <p><span style={{ color: 'white', fontSize: '70px' }}>_</span><br/>OUR<br/>SERVICES</p>
+        <p><span style={{ color: '#0000FF', fontSize: '70px' }}>_</span><br/>OUR<br/>SERVICES</p>
       </div>
     <div className="services-container">
       <div className="service-item">
         <i className="fas fa-clock"></i>
-        <Link style={{textDecoration: 'none'}} to="/"><p>SELF<br/>ASSESMENT</p></Link>
+        <Link style={{textDecoration: 'none',color:'rgb(85, 26, 139)'}} to="/"><p>SELF<br/>ASSESMENT</p></Link>
       </div>
       <div className="service-item">
         <i className="fas fa-map-marker-alt"></i>
-        <Link style={{textDecoration: 'none'}} to="/"><p>Nearby<br/>Help</p></Link>
+        <Link style={{textDecoration: 'none',color:'rgb(85, 26, 139)'}} to="/"><p>Nearby<br/>Help</p></Link>
       </div>
       <div className="service-item">
         <i className="fas fa-heartbeat"></i>
-        <Link style={{textDecoration: 'none'}} to="/activities" ><p>Fun<br/>Activities</p></Link>
+        <Link style={{textDecoration: 'none',color:'rgb(85, 26, 139)'}} to="/activities" ><p>Fun<br/>Activities</p></Link>
       </div>
       <div className="service-item">
         <i className="fas fa-heartbeat"></i>
-        <Link style={{textDecoration: 'none'}} to="/"><p>Healthy<br/>Lifestyle</p></Link>
+        <Link style={{textDecoration: 'none',color:'rgb(85, 26, 139)'}} to="/"><p>Healthy<br/>Lifestyle</p></Link>
       </div>
 
     </div>
