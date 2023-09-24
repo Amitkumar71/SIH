@@ -30,20 +30,20 @@ class Dashboard extends Component {
             <div className="assessment-card">
               <h3>Assessment 1</h3>
               <p>Date: 2023-09-23</p>
-              <p>Result: high Stress</p>
-              <div className="indicator high"></div>
+              <p>Result: Low Stress</p>
+              <div className="indicator low"></div>
             </div>
             <div className="assessment-card">
               <h3>Assessment 2</h3>
               <p>Date: 2023-09-20</p>
-              <p>Result: Low stress</p>
-              <div className="indicator low"></div>
+              <p>Result: Medium stress</p>
+              <div className="indicator medium"></div>
             </div>
             <div className="assessment-card">
               <h3>Assessment 3</h3>
               <p>Date: 2023-09-18</p>
-              <p>Result: Medium Stress</p>
-              <div className="indicator medium"></div>
+              <p>Result: High Stress</p>
+              <div className="indicator high"></div>
             </div>
           </div>
           <div className="add-interests">
