@@ -6,8 +6,13 @@ import MenuItem1 from "./Menu1";
 import { MenuList2 } from "./List2";
 import MenuItem2 from "./Menu2";
 import "./FunActivities.css";
+import { useEffect } from "react";
 
 function Menu() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <><div className="menu">
       <h1 className="menuTitle">Fun Activities</h1>

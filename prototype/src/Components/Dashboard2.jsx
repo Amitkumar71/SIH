@@ -3,6 +3,7 @@ import './Dashboard2.css';
 import profile_img from '../images/top.png';
 import {MdOutlineAssessment} from 'react-icons/md'
 import {BsFillBarChartLineFill} from 'react-icons/bs'
+import { useEffect } from 'react';
 
 class Dashboard extends Component {
   render() {

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Questionnaire.css';
+import { useEffect } from 'react';
 
 function YourComponent() {
   const questions = [
@@ -80,6 +81,10 @@ function YourComponent() {
     console.log(selectedOptions);
     alert("Thank you for taking the time to fill out this survey. Your responses will be kept confidential.");
   }
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className='questionnair-main'>
