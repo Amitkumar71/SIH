@@ -80,6 +80,7 @@ function YourComponent() {
     event.preventDefault();
     console.log(selectedOptions);
     alert("Thank you for taking the time to fill out this survey. Your responses will be kept confidential.");
+    window.location.reload();
   }
   useEffect(() => {
     // Scroll to the top of the page when the component mounts
