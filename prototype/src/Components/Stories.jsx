@@ -1,6 +1,6 @@
 import React from 'react';
 import './Stories.css';
-// import image1 from '../images/story3.jpg';
+import image1 from '../images/story31.jpg';
 import image2 from '../images/story2.jpg';
 import image3 from '../images/story3.jpg';
 
@@ -20,7 +20,7 @@ const SuccessStories = () => {
     },
     {
       id: 3,
-      image: image2,
+      image: image1,
       review: "'The guided meditation sessions have become a part of my daily routine, and I can't express how much they've improved my overall well-being. It's like having a personal stress coach in my pocket. Thank you!'",
       rating: 3, 
     },
