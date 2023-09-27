@@ -4,7 +4,6 @@ import {VictoryPie} from 'victory'
 import './Charts.css'
 
 const PieChart = () => {
-  // Define the data for the pie chart
   const myData=[
   { x: "Age-(18-25)", y: 200 },
   { x: "Age-(25-35)", y: 500 },

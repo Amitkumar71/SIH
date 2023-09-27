@@ -46,7 +46,6 @@
 
 }
 
-/* Responsive styles for mobile screens */
 @media (max-width: 768px) {
     .charts {
         flex-direction: row;
